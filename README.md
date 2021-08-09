@@ -68,25 +68,26 @@ A quick description of your strapi application
   - Response application/json
 
   - Body
-    {
-    "jwt": "",
-    "user": {
-    "id": ,
-    "username": "",
-    "email": "",
-    "provider": "",
-    "confirmed": ,
-    "blocked": ,
-    "role": {
-    "id": ,
-    "name": "",
-    "description": "",
-    "type": ""
-    },
-    "created_at": "2021-08-09T17:16:52.716Z",
-    "updated_at": "2021-08-09T17:16:52.729Z",
-    "clients": []
-    }
+
+            {
+                "jwt": "",
+                "user": {
+                "id": ,
+                "username": "",
+                "email": "",
+                "provider": "",
+                "confirmed": ,
+                "blocked": ,
+                "role": {
+                "id": ,
+                "name": "",
+                "description": "",
+                "type": ""
+                },
+                "created_at": "2021-08-09T17:16:52.716Z",
+                "updated_at": "2021-08-09T17:16:52.729Z",
+                "clients": []
+            }
 
 ## Login a users clients [GET clients/me]
 
