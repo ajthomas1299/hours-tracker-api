@@ -89,9 +89,9 @@ A quick description of your strapi application
                 "clients": []
             }
 
-## Login a users clients [GET clients/me]
+## Get all clients belonged to the current user [GET clients/me]
 
-- Request to get all client belonged to the current user
+- Request to get all client belonged to the current user. Protected endpoint User can only get their clients
 
   - Headers
     Content-Type application/json
@@ -148,9 +148,9 @@ A quick description of your strapi application
                 },
         }
 
-## Login a users client by ID [GET clients/me/:id]
+## User get a client by ID [GET clients/me/:id]
 
-- Request to get all client belonged to the current user
+- Request to get a client by ID protected endpoint. User can only get their clients
 
   - Headers
     Content-Type application/json
@@ -192,7 +192,7 @@ A quick description of your strapi application
 
 ## Login a users client by ID [POST clients]
 
-- User to create a new client
+- User to create a new client and set current user to be the owner
 
   - Headers
     Content-Type application/json
