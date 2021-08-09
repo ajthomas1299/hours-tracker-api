@@ -18,6 +18,14 @@
     },
     {
       "method": "GET",
+      "path": "/clients/me/:id",
+      "handler": "client.meSingle",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
       "path": "/clients/count",
       "handler": "client.count",
       "config": {
