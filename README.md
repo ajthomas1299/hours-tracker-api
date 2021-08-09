@@ -16,7 +16,7 @@ A quick description of your strapi application
 - Request to add new user
 
   - Headers
-          Content-Type application/json
+    Content-Type application/json
   - Body
 
           {
@@ -26,6 +26,7 @@ A quick description of your strapi application
           }
 
 - Response: 200 application/json
+
   - Body
 
           {
@@ -49,18 +50,12 @@ A quick description of your strapi application
 
           }
 
-
-
-
-
-
-
 ## Login a user [POST auth/local]
 
 - Request to login user
 
   - Headers
-          Content-Type application/json
+    Content-Type application/json
   - Body
 
           {
@@ -73,34 +68,33 @@ A quick description of your strapi application
   - Response application/json
 
   - Body
-          {
-              "jwt": "",
-              "user": {
-                      "id": ,
-                      "username": "",
-                      "email": "",
-                      "provider": "",
-                      "confirmed": ,
-                      "blocked": ,
-                      "role": {
-                          "id": ,
-                          "name": "",
-                          "description": "",
-                          "type": ""
-                      },
-                      "created_at": "2021-08-09T17:16:52.716Z",
-                      "updated_at": "2021-08-09T17:16:52.729Z",
-                      "clients": []
-
-          }
+    {
+    "jwt": "",
+    "user": {
+    "id": ,
+    "username": "",
+    "email": "",
+    "provider": "",
+    "confirmed": ,
+    "blocked": ,
+    "role": {
+    "id": ,
+    "name": "",
+    "description": "",
+    "type": ""
+    },
+    "created_at": "2021-08-09T17:16:52.716Z",
+    "updated_at": "2021-08-09T17:16:52.729Z",
+    "clients": []
+    }
 
 ## Login a users clients [GET clients/me]
 
 - Request to get all client belonged to the current user
 
   - Headers
-          Content-Type application/json
-          Authorization: `Bearer ${token}`
+    Content-Type application/json
+    Authorization: `Bearer ${token}`
   - Body
 
           {
@@ -112,53 +106,54 @@ A quick description of your strapi application
   - Response application/json
 
   - Body
-          {
-              [
-                  {
-                      "id": 3,
-                      "name": "test",
-                      "user": {
-                          "id": 3,
-                          "username": "Tommy Kelly",
-                          "email": "tommy_kelly@icloud.com",
-                          "provider": "local",
-                          "confirmed": true,
-                          "blocked": false,
-                          "role": 1,
-                          "created_at": "2021-08-08T23:26:04.415Z",
-                          "updated_at": "2021-08-09T09:04:03.730Z"
-                      },
-                      "published_at": "2021-08-08T23:18:03.706Z",
-                      "created_at": "2021-08-08T23:14:51.248Z",
-                      "updated_at": "2021-08-09T09:04:03.720Z"
-                  },
-                  {
-                      "id": 5,
-                      "name": "test3",
-                      "user": {
-                          "id": 3,
-                          "username": "Tommy Kelly",
-                          "email": "tommy_kelly@icloud.com",
-                          "provider": "local",
-                          "confirmed": true,
-                          "blocked": false,
-                          "role": 1,
-                          "created_at": "2021-08-08T23:26:04.415Z",
-                          "updated_at": "2021-08-09T09:04:03.730Z"
-                      },
-                      "published_at": "2021-08-09T09:03:38.934Z",
-                      "created_at": "2021-08-09T09:03:37.005Z",
-                      "updated_at": "2021-08-09T09:04:03.720Z"
-                  },
 
+          {
+            [
+                {
+                    "id": 3,
+                    "name": "test",
+                    "user": {
+                        "id": 3,
+                        "username": "Tommy Kelly",
+                        "email": "tommy_kelly@icloud.com",
+                        "provider": "local",
+                        "confirmed": true,
+                        "blocked": false,
+                        "role": 1,
+                        "created_at": "2021-08-08T23:26:04.415Z",
+                        "updated_at": "2021-08-09T09:04:03.730Z"
+                    },
+                    "published_at": "2021-08-08T23:18:03.706Z",
+                    "created_at": "2021-08-08T23:14:51.248Z",
+                    "updated_at": "2021-08-09T09:04:03.720Z"
+                },
+                {
+                    "id": 5,
+                    "name": "test3",
+                    "user": {
+                        "id": 3,
+                        "username": "Tommy Kelly",
+                        "email": "tommy_kelly@icloud.com",
+                        "provider": "local",
+                        "confirmed": true,
+                        "blocked": false,
+                        "role": 1,
+                        "created_at": "2021-08-08T23:26:04.415Z",
+                        "updated_at": "2021-08-09T09:04:03.730Z"
+                    },
+                    "published_at": "2021-08-09T09:03:38.934Z",
+                    "created_at": "2021-08-09T09:03:37.005Z",
+                    "updated_at": "2021-08-09T09:04:03.720Z"
+                },
+        }
 
 ## Login a users client by ID [GET clients/me/:id]
 
 - Request to get all client belonged to the current user
 
   - Headers
-          Content-Type application/json
-          Authorization: `Bearer ${token}`
+    Content-Type application/json
+    Authorization: `Bearer ${token}`
   - Body
 
           {
@@ -170,6 +165,7 @@ A quick description of your strapi application
   - Response application/json
 
   - Body
+
           {
               [
               {
@@ -190,16 +186,16 @@ A quick description of your strapi application
                   "created_at": "2021-08-09T10:13:47.358Z",
                   "updated_at": "2021-08-09T10:13:47.367Z"
               }
-          ]
-
+            ]
+          }
 
 ## Login a users client by ID [POST clients]
 
 - User to create a new client
 
   - Headers
-          Content-Type application/json
-          Authorization: `Bearer ${token}`
+    Content-Type application/json
+    Authorization: `Bearer ${token}`
   - Body
 
           {
@@ -211,6 +207,7 @@ A quick description of your strapi application
   - Response application/json
 
   - Body
+
           {
               "id": 11,
               "name": "",
