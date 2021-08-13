@@ -13,12 +13,21 @@
   "pluginOptions": {},
   "attributes": {
     "name": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "user": {
       "plugin": "users-permissions",
       "model": "user",
       "via": "clients"
+    },
+    "email": {
+      "type": "email",
+      "required": true
+    },
+    "number": {
+      "type": "string",
+      "required": true
     }
   }
 }
